@@ -1,0 +1,58 @@
+body{
+  width: 100%;
+  align-items: center;
+}
+.containerr{
+  margin-left: 100px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+.bookinpage{
+margin-left: 200px;
+background-color: aqua;
+margin-top: 100px;
+margin-right: 400px;
+width: 500px;
+padding: 20px;
+border: 1px solid;
+border-color: white;
+
+}
+.bookinpage .forms{
+box-sizing: content-box;
+padding: 8px;
+margin-left: 20px;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+}
+.bookinpage p {
+text-transform: uppercase;
+font-weight: bold;
+margin: 10px;
+font-size: 50px;
+color: red;
+}
+.bookinpage .forms input, select {
+  height: 40px;
+  width: 400px;
+  border-radius: 6px;
+  border-color: azure;
+  
+}
+.bookinpage .forms label {
+  font-size: 20px;
+  margin-left: 30px ;
+  font-weight: bold;
+}
+#btn2{
+  width: 100px;
+  margin-right: 10px;
+  background-color: rgb(15, 250, 15);
+}
+#btn1{
+  width: 100px;
+  margin-right: 10px;
+  background-color: red;
+}

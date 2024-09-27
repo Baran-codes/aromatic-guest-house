@@ -1,0 +1,84 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guesthouse management system ">
+    <meta name="revised" content="2024">
+    <meta name="Author" content="Duncan Gacheru">
+    <title>Aromatic GuestHouses</title>
+    <link rel="stylesheet" href="stylesheet/index.css">
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="/New folder/styles.css">  
+    <link rel="icon" href="images/icon.jpg">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+  <body>
+    <nav id="navbar" class="sticky">
+      <input type="checkbox" id="check" class="checkbtn">
+      <label for="check" class="checkbtn">
+        <i>&#9783;</i>
+      </label>
+      <label class="logos">Aromatic GuestHouse</label>
+      <ul>
+        <li>
+          <a  href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#rooms">Rooms</a>
+        </li>
+        <li>
+          <a href="#contact">Contact Us</a>
+        </li>
+        <li>
+          <a href="booking.php" class="active">Booking</a>
+        </li>
+        <li>
+          <a href="login.html">Login</a>
+        </li>
+      </ul>
+    </nav><br>
+  <div class="containerr" >
+    <div class="bookinpage">
+      <p>Book with us</p>
+      <form action="book.php" method="post" class="forms">
+        <label for="name">Name:</label><br>
+             <input id="name" name="name" placeholder="Full Name" required="" tabindex="1" type="text"><br>
+       
+       <label for="email">Email</label><br>
+             <input id="email" name="email" placeholder="Email" required="" type="email"><br>
+       
+       <label for="mobile">Mobile No:</label> <br>
+                   <input id="phone" name="mobile" placeholder="Number" required="" type="text"> <br>
+       
+       
+       <label for="in">Check in:</label><br>
+                   <input id="calendar3" name="in"  required="" type="date"> <br>
+       
+       <label for="out">Check out:</label> <br>
+                   <input id="calendar4" name="out"  required="" type="date"> <br>
+       
+       <label for="room">Room Type:</label><br>
+         <select name="room" placeholder="select the type of room">
+           <option value="Deluxe Suites">Deluxe suites</option>
+           <option value="Queen Room">Queen room</option>
+           <option value="Executive suite">Executive suite</option>
+           <option value="Double Bed">Double Bed suites</option>
+           <option value="Presidential Suites">Presidential Suites</option>
+         </select>
+       <br><br>
+       <input type="submit" name="submit" value="Book" id="btn2"/></a>
+     <input type="reset" name="reset" value="Reset" id="btn1" />
+     </form>
+   </div>
+  </div>
+  
+  
+  </body>
+</html>

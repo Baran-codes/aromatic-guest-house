@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guesthouse management system ">
+    <meta name="revised" content="2024">
+    <meta name="Author" content="Duncan Gacheru">
+    <title>Aromatic GuestHouses</title>
+    <link rel="stylesheet" href="stylesheet/index.css">
+    <link rel="stylesheet" href="/New folder/styles.css">  
+    <link rel="icon" href="images/icon.jpg">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+      .bform{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 350px;
+        height: 350px;
+        text-align: center;
+        border: 1px solid rgb(241, 241, 241);
+        border-radius: 12px;
+        padding: 10px 20px;
+        background-color: burlywood;
+        box-shadow: 5px 5px 10px 0 rgb(0, 0, 0, 0.5);
+      }
+      .bform h2{
+        font-size: 30px;
+        text-transform: uppercase;
+        color: whitesmoke;
+      }
+      .inputfield{
+        position: relative;
+      }
+      .inputfield input[type="email"],
+      .inputfield input[type="password"] {
+        border-radius: 10px;
+        background: transparent;
+        margin-bottom: 15px;
+        border: 2px solid rgb(255, 255, 255);
+        width: 280px;
+        height: 2px;
+        padding: 20px 40px 20px 20px;
+
+      }
+      input::placeholder{
+        color: aqua;
+      }
+      label{
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .bform .login{
+        background: rgb(53, 238, 12);
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-weight: 600;
+        border-radius: 45px;
+        width: 150px;
+        height: 30px;
+      }
+    </style>
+   </head>
+  <body>
+    <nav id="navbar" class="sticky">
+      <input type="checkbox" id="check" class="checkbtn">
+      <label for="check" class="checkbtn">
+        <i>&#9783;</i>
+      </label>
+      <label class="logos">Aromatic GuestHouse</label>
+      <ul>
+        <li>
+          <a  href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#rooms">Rooms</a>
+        </li>
+        <li>
+          <a href="#contact">Contact Us</a>
+        </li>
+        <li>
+          <a href="booking.html" >Booking</a>
+        </li>
+        <li>
+          <a href="login.html" class="active">Login</a>
+        </li>
+      </ul>
+    </nav><br>
+  <div class="bform">
+    <h2>Welcome</h2>
+    <form action="login.php" method="POST">
+      <label for="">
+        EMAIL:
+      </label>
+      <div class="inputfield">
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+      </div>
+    
+      <div class="inputfield">
+        <label for="">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Password">
+      </div>
+      <button type="submit" class="login" name="submit">Login</button>
+    </form>
+  </div>
+  
+  </body>
+</html>
